@@ -1,21 +1,65 @@
 \documentclass{article}
-\title{Proposal GNU}
-\usepackage{graphicx}
-\date{2017-03-30}
+\usepackage{hyperref}
+\title{Google Summer Of Code - Student Application}
 \author{Olivier Grégoire}
-\usepackage{amsmath}
+
 
 
 \begin{document}
-
+\maketitle
 
 \section{Your name}
 My name is Olivier GRÉGOIRE and my pseudonym is Gasuleg
+
 \section{Your email adress}
+You can contact me at
+\href{mailto:olivier.gregoire.1@ens.etsmtl.ca}{olivier.gregoire.1@ens.etsmtl.ca}
+
+
 \section{The name of the project}
+
+\underline{\textbf{GNU Ring}} \\
+\textbf{Setting-up unit tests for SIP} \\
+The student coding for this subject, should: \\
+(1) Re-establish the unit tests for SIP, in order to check the components of a SIP account in Ring.\\
+(2) Develop an automation strategy to be integrated with Ring's Jenkins compilation and verification system. \\
+(3) Increase Ring's existing test coverage. \\
+
 \section{Summary}
+I will work on the GNU Ring project. This project is, at the moment, unstable due to a lack of automated tests. Only a part of the code is tested. To do that, I need to: \\
+  - Reimplement some unit tests to check the components of the SIP pur account. \\
+  - Research and test automation strategies that integrate the compilation system and Jenkins verification. \\
+  - Write more unit tests for the critical functions in order to increase the code coverage.\\
+
+
 \section{Benefits}
+With my project, GNU Ring will be more stable. It will help discover bugs earlier in the development pipeline. If I succeed, GNU Ring will be one large step closer to coming out of beta.\\ \\
+For the moment, GNU Ring is mostly used by some early adopters, because of the bugs. With my work, more users will be able to use GNU Ring in their daily life. \\ \\
+Ring is a GNU project, if I increase its quality, GNU will be happy to have a great real-time voice and video chat. This type of project is really important for many organisations, like the Free Software Foundation, which mentions GNU Ring as high priority.
+
 \section{Deliverables}
-\section{References}
+I need to modify the GNU Ring daemon with the implementation of the unit tests.\\
+I also need to work with the Jenkins settings in order to implement an adequate automation strategy.
+
+\section{Plan}
+\textbf{(May 4 - 30)}\\
+\textit{Community bonding} - Learn the inner workings of the daemon by reading documentation, reading the code itself, and asking questions to the developers.\\ \\
+\textbf{(May 31 - 20 June)} \\ I will work on the unit tests for the SIP account, as some code is already implemented. Therefore, it will be easier to start from there than starting from scratch elsewhere.\\ \\
+\textbf{(June 21 - 25)} \\ Research and list automation strategies I can integrate with Jenkins compilation and verification system, as well as list the advantages and disadvantages of each. \\ \\
+\textbf{(June 26-30)}\\ Write a report for the first part of my GSoC. Do the balance sheet with my mentor of what was done well  and what I need to improve on. \\ \\
+\textbf{(July 1 - 19)}\\ Test the integration (which  needs to be as seamless as possible) and overall efficiency of the different automation strategies. \\ \\
+\textbf{(July 20 - 31)}\\ Implement the best solution in Jenkins. \\ \\
+\textbf{(August 1 - 10)}\\ Write units test for the more critical parts of the daemon. \\ \\
+\textbf{(August 10 - 20)}\\ Merge all my code in the project. \\ \\
+\textbf{(August 21 - 29)}\\ Better document my code. Write a final report to resume all my Google Summer of Code. \\ \\
+
+\section{Communication}
+This point is really important for me because I’m scared of feeling alone in my project during this summer. To avoid this, I plan to be connected all the time on IRC to communicate with the rest of the team. I will participate in  the bi-weekly sprint meeting with GNU Ring to present what I’m doing at the moment. I also want to have a meeting with my mentor every week but I need to plan it with him.
+
+\section{Qualification}
+I'm an electronics technologist and I now study  in the IT field. I am studying at École de Technologie Supérieure in Montréal. I wrote C during 3 years to program microcontrollers. I’ve used Java and C++ during the past two years. I have experience contributing to free and open source projects. I have participated in GSoC before (report can be found
+\href{https://gasuleg.github.io/gsoc2016/final\_report/2016/08/19/Final-Evaluation.html}{here}
+This project is perfect for engineering students, such as me, as it is a good occasion to learn how to properly implement automated tests and quality assurance.
+
 
 \end{document}

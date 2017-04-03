@@ -3,5 +3,6 @@
 *.lof
 *.log
 *.lot
-*.pdf
 *.blg
+*.toc
+*.out
